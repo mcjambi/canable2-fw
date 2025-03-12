@@ -21,7 +21,7 @@ int main(void)
     usb_init();
 
     // Power-on blink sequence
-    led_blue_blink(2);
+    led_blue_blink(10);
 
     // Storage for status and received message buffer
     FDCAN_RxHeaderTypeDef rx_msg_header;
