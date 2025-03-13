@@ -35,7 +35,7 @@ int main(void)
         can_process();
         cdc_process();
         
-        
+        led_pa5_blink(); // Nhấp nháy LED PA5 /** Jamviet.com custom */
 
         // Message has been received, pull it from the buffer
         if(is_can_msg_pending(FDCAN_RX_FIFO0))

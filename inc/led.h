@@ -22,5 +22,7 @@ void led_green_on(void);
 void led_green_off(void);
 void led_blue_on(void);
 void led_process(void);
+// 🔥 Thêm khai báo hàm cho PA5
+void led_pa5_blink(void);
 
 #endif

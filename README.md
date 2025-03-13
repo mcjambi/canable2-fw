@@ -65,3 +65,13 @@ Plug in your CANable2 while pressing down the BOOT button. The blue LED should b
 ## License
 
 See LICENSE.md
+
+
+
+## JAMVIET.com note
+
+- GPIO_PIN_3 chân số 11 đang dư
+- GPIO_PIN_4 chân số 12 đang dư
+- GPIO_PIN_5 chân số 13 đang dư
+- GPIO_PIN_6 chân số 14 đang dư
+- GPIO_PIN_7 chân số 15 đang dư

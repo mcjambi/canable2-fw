@@ -23,6 +23,8 @@ void led_init()
     __HAL_RCC_GPIOA_CLK_ENABLE();
     __HAL_RCC_GPIOB_CLK_ENABLE();
 
+
+
     GPIO_InitTypeDef GPIO_InitStruct;
     GPIO_InitStruct.Pin = LED_BLUE_Pin;
     GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
@@ -38,9 +40,29 @@ void led_init()
     GPIO_InitStruct.Alternate = 0;
     HAL_GPIO_Init(LED_GREEN_Port, &GPIO_InitStruct);
 
-
     HAL_GPIO_WritePin(LED_GREEN, 1); 
+
+		/** JAM CuSTom */
+	    // Cấu hình PA5 làm OUTPUT (LED)
+		GPIO_InitStruct.Pin = GPIO_PIN_5;
+		GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP; // Output Push-Pull
+		GPIO_InitStruct.Pull = GPIO_NOPULL;
+		GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+		HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+	
+		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET); // Tắt LED ban đầu
+		
+	/** JAM CuSTom */
+
 }
+
+/** JAM Custom chân 13 PA5 của IC */
+void led_pa5_blink(void)
+{
+    HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5); // Đảo trạng thái LED
+    HAL_Delay(500); // Chờ 500ms
+}
+/** JAM Custom chân 13 PA5 của IC */
 
 
 // Turn green LED on
