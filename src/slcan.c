@@ -11,7 +11,7 @@
 
 
 // Private variables
-char* fw_id =  "JAMPRIVATE\r";
+char* fw_id = GIT_VERSION " " GIT_REMOTE "\r";
 
 
 // Private methods
