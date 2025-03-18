@@ -1,0 +1,205 @@
+CANBUS ID
+
+
+Khi bấm nút hazard (Ngon nha, gửi lặp lại là được)
+
+ID: 0x41E [8] Data: FE 1E 04 02 AD FF 00 06
+ID: 0x382 [3] Data: 00 00 00
+ID: 0x029 [3] Data: E0 15 0F
+ID: 0x10D [4] Data: 60 80 02 00
+ID: 0x10E [4] Data: 60 80 03 00
+ID: 0x003 [8] Data: 10 04 10 00 04 FF 10 D2
+ID: 0x1C1 [4] Data: 00 00 00 00
+ID: 0x30E [8] Data: 00 00 00 00 00 33 00 00
+ID: 0x62F [4] Data: 00 00 00 AB
+ID: 0x3FB [2] Data: 15 50
+ID: 0x62F [4] Data: 00 00 00 AB
+ID: 0x3E2 [7] Data: FF FF FF FF FF FF 0F
+ID: 0x62F [4] Data: 00 00 00 AB
+ID: 0x3E2 [7] Data: FF FF FF FF FF FF 0F
+ID: 0x62F [4] Data: 00 00 00 AB
+
+
+Xi nhan trái
+
+ID: 0x029 [3] Data: 50 22 05
+ID: 0x029 [3] Data: 50 20 05
+ID: 0x029 [3] Data: 50 1E 05
+ID: 0x029 [3] Data: 50 22 05
+ID: 0x029 [3] Data: 50 20 05
+ID: 0x029 [3] Data: 50 1E 05
+ID: 0x029 [3] Data: 50 22 05
+ID: 0x029 [3] Data: 50 20 05
+ID: 0x029 [3] Data: 50 1E 05
+ID: 0x029 [3] Data: 00 00 00
+
+xi nhan phải
+
+ID: 0x029 [3] Data: 90 22 0A
+ID: 0x029 [3] Data: 90 20 0A
+ID: 0x029 [3] Data: 90 1E 0A
+ID: 0x029 [3] Data: 90 22 0A
+ID: 0x029 [3] Data: 90 20 0A
+ID: 0x029 [3] Data: 90 1E 0A
+ID: 0x029 [3] Data: 90 22 0A
+ID: 0x029 [3] Data: 90 20 0A
+ID: 0x029 [3] Data: 90 1E 0A
+ID: 0x029 [3] Data: 90 22 0A
+ID: 0x029 [3] Data: 90 20 0A
+ID: 0x029 [3] Data: 90 1E 0A
+ID: 0x029 [3] Data: 90 22 0A
+ID: 0x029 [3] Data: 90 20 0A
+ID: 0x029 [3] Data: 90 1E 0A
+ID: 0x029 [3] Data: 00 00 00
+
+Bấm mở chìa
+ID: 0x1ED [8] Data: 20 21 13 18 47 14 82 FD
+ID: 0x1ED [8] Data: 21 29 AB 1A 72 60 3D 43
+ID: 0x00F [1] Data: 01
+ID: 0x00F [1] Data: 00
+ID: 0x00F [1] Data: 00
+ID: 0x00F [1] Data: 00
+ID: 0x00F [1] Data: 00
+ID: 0x00F [1] Data: 00
+ID: 0x1ED [8] Data: 20 21 13 18 47 14 82 FD
+ID: 0x1ED [8] Data: 21 29 AB 1A 72 60 3D 43
+ID: 0x029 [3] Data: C0 22 0F
+ID: 0x029 [3] Data: C0 20 0F
+ID: 0x029 [3] Data: C0 1E 0F
+ID: 0x029 [3] Data: 00 00 00
+
+
+Bấm khóa chìa
+ID: 0x1ED [8] Data: 20 23 14 18 47 14 82 5F
+ID: 0x1ED [8] Data: 21 D1 99 39 52 7B 95 67
+ID: 0x1ED [8] Data: 20 23 14 18 47 14 82 5F
+ID: 0x1ED [8] Data: 21 D1 99 39 52 7B 95 67
+
+——
+Bấm mở cốp 1 lần
+
+ID: 0x1ED [8] Data: 20 45 18 18 47 14 82 75
+ID: 0x1ED [8] Data: 21 03 C6 F0 58 D3 78 5F
+ID: 0x1ED [8] Data: 20 45 18 18 47 14 82 75
+ID: 0x1ED [8] Data: 21 03 C6 F0 58 D3 78 5F
+
+Bấm nút volume down
+ID: 0x400 [8] Data: FE 00 04 02 0B 00 00 06
+ID: 0x201 [8] Data: FF FF FF FF FF 00 00 FF
+ID: 0x375 [8] Data: 01 37 3F 00 00 07 02 00
+ID: 0x175 [8] Data: 02 01 00 00 00 00 80 D0
+ID: 0x201 [8] Data: 00 00 00 00 00 00 10 C7
+ID: 0x201 [8] Data: 00 00 00 00 00 00 A0 AB
+
+
+Bấm nút volume up
+ID: 0x400 [8] Data: FE 00 04 02 0B 00 00 06
+ID: 0x201 [8] Data: FF FF FF FF FF 00 00 FF
+ID: 0x402 [8] Data: FE 02 04 02 00 00 00 06
+ID: 0x001 [8] Data: 01 C0 DF AC AA 07 D0 DA
+ID: 0x3BF [8] Data: 00 00 00 00 0D FF FF FF
+
+Bấm nút khẩu lệnh
+ID: 0x400 [8] Data: FE 00 04 02 0B 00 00 06
+ID: 0x201 [8] Data: FF FF FF FF FF 00 00 FF
+ID: 0x375 [8] Data: 01 37 3F 00 00 07 02 00
+
+Bấm mở khóa ở cửa phụ
+ID: 0x421 [8] Data: FE 21 04 02 40 00 00 06
+ID: 0x004 [5] Data: 02 00 80 03 0F
+ID: 0x3D3 [4] Data: C9 00 00 00
+ID: 0x18B [8] Data: 3F FF FF 3F FF FF 00 00
+ID: 0x201 [8] Data: 00 00 00 00 00 00 80 2C
+ID: 0x201 [8] Data: 00 00 00 00 00 00 10 C7
+
+Bấm khóa ở cửa phụ
+
+ID: 0x421 [8] Data: FE 21 04 02 40 00 00 06
+ID: 0x004 [5] Data: 02 00 80 03 0F
+ID: 0x3D3 [4] Data: C9 00 00 00
+ID: 0x355 [8] Data: FF FF FF FF FF FF FF FF
+ID: 0x355 [8] Data: 56 FF 57 81 64 64 00 00
+ID: 0x355 [8] Data: 56 FF 57 81 64 64 00 00
+ID: 0x0DE [8] Data: 03 FF 17 FF 03 FF 80 4C
+
+Khi rút chìa
+ID: 0x141 [8] Data: 00 B1 7C FF 00 00 FF 00
+ID: 0x3D1 [4] Data: C9 08 00 00
+ID: 0x355 [8] Data: 56 FF 57 81 64 64 00 00
+ID: 0x20B [7] Data: 78 78 FF FF 00 00 00
+ID: 0x3BF [8] Data: 00 00 00 00 0B FF FF FF
+ID: 0x355 [8] Data: 56 FF 57 81 64 64 00 00
+ID: 0x003 [8] Data: 10 04 10 00 04 FF D0 E7
+ID: 0x3B8 [6] Data: 00 00 00 00 FE 00
+ID: 0x003 [8] Data: 10 04 10 00 04 FF 10 D2
+ID: 0x003 [8] Data: 10 04 10 00 04 FF 30 55
+ID: 0x375 [8] Data: 01 07 35 00 00 07 02 00
+ID: 0x35C [7] Data: 00 00 00 00 00 00 00
+ID: 0x375 [8] Data: 01 07 35 00 00 07 02 00
+ID: 0x207 [8] Data: 00 03 7F 20 14 C3 15 0B
+ID: 0x375 [8] Data: 01 07 35 00 00 07 02 00
+ID: 0x12D [8] Data: 0F 0F 00 00 18 47 14 82
+ID: 0x12D [8] Data: 0F 0F 00 00 18 47 14 82
+ID: 0x204 [8] Data: 00 52 4C 4D 47 46 34 48
+ID: 0x001 [8] Data: 00 C0 DF AC AA 07 70 26
+ID: 0x001 [8] Data: 00 C0 DF AC AA 07 C0 4A
+ID: 0x001 [8] Data: 00 C0 DF AC AA 07 10 B2
+ID: 0x045 [8] Data: 00 FF 00 00 00 00 67 C4
+ID: 0x3BF [8] Data: 00 00 00 00 0E FF FF FF
+ID: 0x3BF [8] Data: 00 00 00 00 07 FF FF FF
+ID: 0x105 [8] Data: 00 00 80 00 00 3F 00 4B
+ID: 0x200 [1] Data: 0A
+ID: 0x105 [8] Data: 00 00 80 00 00 3F 20 CC
+ID: 0x200 [1] Data: 0A
+ID: 0x105 [8] Data: 00 00 80 00 00 3F 40 58
+ID: 0x204 [8] Data: 01 58 33 39 56 30 30 31
+ID: 0x105 [8] Data: 00 00 80 00 00 3F 60 DF
+ID: 0x204 [8] Data: 01 58 33 39 56 30 30 31
+ID: 0x105 [8] Data: 00 00 80 00 00 3F 80 6D
+ID: 0x105 [8] Data: 00 00 80 00 00 3F 10 86
+ID: 0x004 [5] Data: 02 00 80 03 0F
+ID: 0x002 [5] Data: 01 80 80 05 0F
+ID: 0x007 [8] Data: 50 05 38 00 3F FC FF 79
+ID: 0x007 [8] Data: 50 05 38 00 3F FC FF 79
+ID: 0x3BF [8] Data: 00 00 00 00 0F FF FF FF
+
+
+Khi cắm chìa 
+ID: 0x402 [8] Data: FE 02 04 02 18 FF FF 06
+ID: 0x001 [8] Data: 01 C0 DF AC AA 07 F0 5D
+ID: 0x12D [8] Data: 8F 0F 00 00 18 47 14 82
+ID: 0x382 [3] Data: 00 00 00
+ID: 0x3BF [8] Data: 00 00 00 00 09 FF FF FF
+ID: 0x3BF [8] Data: 00 00 00 00 02 FF FF FF
+ID: 0x382 [3] Data: 00 00 00
+ID: 0x385 [3] Data: 00 00 00
+ID: 0x385 [3] Data: 00 00 00
+ID: 0x385 [3] Data: 00 00 00
+ID: 0x385 [3] Data: 00 00 00
+ID: 0x31F [8] Data: 00 00 00 3B FF FE 1F 00
+ID: 0x10C [8] Data: F8 FF FF 03 00 00 FF FB
+ID: 0x204 [8] Data: 01 58 33 39 56 30 30 31
+ID: 0x069 [2] Data: 00 18
+ID: 0x069 [2] Data: 00 18
+
+Khi bật chìa
+
+ID: 0x402 [8] Data: FE 02 04 02 1A FF FF 06
+ID: 0x12D [8] Data: 0F 0F 00 00 18 47 14 82
+ID: 0x1C0 [2] Data: 00 00
+ID: 0x2F7 [6] Data: FF FF FF FF FF 7F
+ID: 0x355 [8] Data: 56 FF 57 81 64 64 00 00
+ID: 0x2F7 [6] Data: 7F FE 00 78 FF 7F
+ID: 0x355 [8] Data: 56 FF 57 81 64 64 00 00
+ID: 0x18B [8] Data: 3F FF FF 3F FF FF 00 00
+ID: 0x35C [7] Data: 01 00 00 00 00 00 00
+ID: 0x003 [8] Data: 10 04 10 00 04 FF B0 73
+ID: 0x003 [8] Data: 10 04 10 00 04 FF D0 E7
+ID: 0x003 [8] Data: 10 04 10 00 04 FF F0 60
+ID: 0x375 [8] Data: 01 07 35 00 00 07 02 00
+ID: 0x388 [8] Data: 08 FF 1F 00 00 1F FF 3F
+ID: 0x375 [8] Data: 05 07 35 00 00 07 02 00
+ID: 0x207 [8] Data: 00 03 7F 20 14 C3 15 0B
+ID: 0x12D [8] Data: 0F 0F 00 00 18 47 14 82
+ID: 0x12D [8] Data: 0F 0F 00 00 18 47 14 82
+
