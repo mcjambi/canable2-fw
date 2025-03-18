@@ -139,6 +139,8 @@ try:
                 print(f"ID: 0x{msg.arbitration_id:03X} [{msg.dlc}] Data: {data_hex}")
             else:
                 print(f"Waiting for messages...")
+
+            time.sleep(0.5)
             
         except KeyboardInterrupt:
             print("\nStopping...")

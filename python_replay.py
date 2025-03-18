@@ -4,25 +4,15 @@ import sys
 
 # Danh sách các cụm tin nhắn, mỗi cụm là một chuỗi các tin nhắn
 MESSAGE_GROUPS = [
-    """ID: 0x3D3 [4] Data: C9 00 00 00
-ID: 0x41F [8] Data: FD 20 3F FF FF FF FF FF
-ID: 0x02F [7] Data: 00 00 64 00 00 00 00
-ID: 0x3B7 [8] Data: 3C 00 07 FF 00 03 FF FF
-ID: 0x006 [5] Data: 00 3C 00 FF 02
+    """ID: 0x400 [8] Data: FE 00 04 02 0B 00 00 06
+ID: 0x201 [8] Data: FF FF FF FF FF 00 00 FF
+ID: 0x375 [8] Data: 01 37 3F 00 00 07 02 00
+ID: 0x41F [8] Data: FE 1F 04 02 00 00 00 06
+ID: 0x203 [8] Data: FF FF FF FF FF FF FF FF
+ID: 0x421 [8] Data: FE 21 04 02 00 00 00 06
+ID: 0x420 [8] Data: FE 20 04 02 00 00 00 06
 ID: 0x007 [8] Data: 50 05 38 00 3F FC FF 79
-ID: 0x30C [2] Data: 00 00
-ID: 0x382 [3] Data: 00 00 00
-ID: 0x3F6 [5] Data: 02 00 00 00 00
-ID: 0x045 [8] Data: 00 FF 00 00 00 00 07 FF
-ID: 0x208 [8] Data: 19 00 00 00 00 00 00 3C
-ID: 0x3FC [2] Data: 3C 00
-ID: 0x12D [8] Data: 00 90 50 55 18 47 14 82
-ID: 0x3FB [2] Data: 15 50
-ID: 0x04B [6] Data: 00 C1 CF 3E C1 00
-ID: 0x205 [8] Data: 02 7B 08 0F 00 00 00 00
-ID: 0x141 [8] Data: 00 A1 70 FF 00 00 FF 00
-ID: 0x629 [8] Data: 33 00 00 00 00 00 00 00
-ID: 0x00F [1] Data: 00"""
+ID: 0x00F [1] Data: 01"""
 ]
 
 # Cấu hình thiết bị
@@ -88,7 +78,7 @@ def send_message_group(bus, group):
         if message:
             id_hex, data_hex = message
             send_can_message(bus, id_hex, data_hex)
-            time.sleep(0.02)  # Đợi 100ms giữa các tin nhắn
+            time.sleep(1)  # Đợi 100ms giữa các tin nhắn
 
 def main():
     # Khởi tạo kết nối CAN

@@ -9,7 +9,7 @@ CHANNEL = '/dev/tty.usbmodem2054306053301'  # Thay đổi theo cổng của bạ
 BITRATE = 125000
 
 # Danh sách các ID CAN cần theo dõi
-MONITOR_IDS = {}
+MONITOR_IDS = {0x000A, 0x0260}
 
 # Danh sách các ID CAN cần bỏ qua
 IGNORE_IDS = {0x333333}
