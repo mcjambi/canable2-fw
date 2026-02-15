@@ -2,17 +2,15 @@ import can
 import time
 import sys
 
-# Danh sách các cụm tin nhắn, mỗi cụm là một chuỗi các tin nhắn
-MESSAGE_GROUPS = [
-    """ID: 0x400 [8] Data: FE 00 04 02 0B 00 00 06
-ID: 0x201 [8] Data: FF FF FF FF FF 00 00 FF
-ID: 0x375 [8] Data: 01 37 3F 00 00 07 02 00
-ID: 0x41F [8] Data: FE 1F 04 02 00 00 00 06
-ID: 0x203 [8] Data: FF FF FF FF FF FF FF FF
-ID: 0x421 [8] Data: FE 21 04 02 00 00 00 06
-ID: 0x420 [8] Data: FE 20 04 02 00 00 00 06
-ID: 0x007 [8] Data: 50 05 38 00 3F FC FF 79
-ID: 0x00F [1] Data: 01"""
+# gõ source venv/bin/activate trước
+# pip install pyserial
+# pip install python-can
+# python python_replay.py
+
+# Danh sách tin nhắn (mỗi lần Enter sẽ gửi 1 tin nhắn)
+MESSAGES = [
+    """ID: 0x001 [8] Data: 00 C0 DF AC AA 07 22 02""",
+    """ID: 0x001 [8] Data: 00 C0 DF 5C 55 07 22 02""",
 ]
 
 # Cấu hình thiết bị
@@ -63,22 +61,12 @@ def send_can_message(bus, id_hex, data_hex):
     except Exception as e:
         print(f"Lỗi gửi tin nhắn: {e}")
 
-def send_message_group(bus, group):
-    """Gửi một cụm tin nhắn liên tiếp"""
-    # Tách các dòng tin nhắn trong cụm
-    message_lines = [line.strip() for line in group.split('\n') if line.strip()]
-    
-    print(f"\nBắt đầu gửi cụm tin nhắn ({len(message_lines)} tin nhắn):")
-    for line in message_lines:
-        print(f"- {line}")
-    
-    # Gửi từng tin nhắn trong cụm
-    for line in message_lines:
-        message = parse_message(line)
-        if message:
-            id_hex, data_hex = message
-            send_can_message(bus, id_hex, data_hex)
-            time.sleep(1)  # Đợi 100ms giữa các tin nhắn
+def send_message_line(bus, line):
+    """Gửi một tin nhắn"""
+    message = parse_message(line)
+    if message:
+        id_hex, data_hex = message
+        send_can_message(bus, id_hex, data_hex)
 
 def main():
     # Khởi tạo kết nối CAN
@@ -87,24 +75,29 @@ def main():
         return
 
     print("Bắt đầu phát lại tin nhắn...")
-    print("Nhấn Enter để gửi cụm tin nhắn tiếp theo, Ctrl+C để dừng")
+    print("Nhấn Enter để gửi tin nhắn tiếp theo, gõ q để dừng")
     
     try:
-        current_group = 0
+        current_index = 0
         while True:
-            # Lấy cụm tin nhắn tiếp theo
-            group = MESSAGE_GROUPS[current_group]
-            print(f"\nCụm tin nhắn tiếp theo ({current_group + 1}/{len(MESSAGE_GROUPS)}):")
-            print(group)
+            # Lấy tin nhắn tiếp theo
+            line = MESSAGES[current_index]
+            print(f"\nTin nhắn tiếp theo ({current_index + 1}/{len(MESSAGES)}):")
+            print(line)
             
             # Đợi người dùng nhấn Enter
-            input("Nhấn Enter để gửi cụm tin nhắn...")
+            user_input = input("Nhấn Enter để gửi tin nhắn (q để dừng)...").strip().lower()
+            if user_input in {"q", "quit", "exit"}:
+                break
+            if user_input != "":
+                continue
             
-            # Gửi cụm tin nhắn
-            send_message_group(bus, group)
+            # Gửi tin nhắn
+            send_message_line(bus, line)
+            time.sleep(0.5)
             
-            # Chuyển đến cụm tin nhắn tiếp theo
-            current_group = (current_group + 1) % len(MESSAGE_GROUPS)
+            # Chuyển đến tin nhắn tiếp theo
+            current_index = (current_index + 1) % len(MESSAGES)
             
     except KeyboardInterrupt:
         print("\nĐã dừng phát lại")
