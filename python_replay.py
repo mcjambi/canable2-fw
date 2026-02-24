@@ -9,8 +9,15 @@ import sys
 
 # Danh sách tin nhắn (mỗi lần Enter sẽ gửi 1 tin nhắn)
 MESSAGES = [
-    """ID: 0x001 [8] Data: 00 C0 DF AC AA 07 22 02""",
-    """ID: 0x001 [8] Data: 00 C0 DF 5C 55 07 22 02""",
+    """ID: 0x001 [8] Data: 00 C0 DF AC AA 07 22 02""", # On xe
+    """ID: 0x001 [8] Data: 00 C0 DF 5C 55 07 22 02""", # Off xe
+    """ID: 0x12D [8] Data: 02 60 00 00 00 00 00 00""", # Off xe bằng chìa
+    """ID: 0x12D [8] Data: 02 60 00 00 00 00 00 00""", # Off xe bằng chìa
+    """ID: 0x12D [8] Data: 02 90 00 00 00 00 00 00""", # Mở xe bằng chìa
+    # """ID: 0x001 [8] Data: 00 C0 DF AC AA 07 22 02""", # On xe
+    # """ID: 0x388 [8] Data: 07 FF 07 00 00 1F FF 3F""", # số lùi
+    # """ID: 0x388 [8] Data: 05 FF 07 00 00 1F FF 3F""", # số D
+    # """ID: 0x388 [8] Data: 08 FF 07 00 00 1F FF 3F""", # số P
 ]
 
 # Cấu hình thiết bị
